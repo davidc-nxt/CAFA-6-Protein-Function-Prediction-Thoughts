@@ -1,3 +1,6 @@
+# Archive (old scripts and experimental files)
+archive/
+
 # Python
 __pycache__/
 *.py[cod]
