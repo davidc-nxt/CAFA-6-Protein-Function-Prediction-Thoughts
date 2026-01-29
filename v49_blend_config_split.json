@@ -1,0 +1,36 @@
+{
+  "output": "submission_v49_blend.tsv",
+  "min_score": 0.01,
+  "top_k": 300,
+  "normalize": true,
+  "hierarchy_clip": false,
+  "inputs": [
+    {
+      "path": "diamond_val_preds.tsv",
+      "weights": {
+        "F": 0.46125264461845744,
+        "P": 0.4280292653857629,
+        "C": 0.41317616365036597
+      },
+      "power": 1.0
+    },
+    {
+      "path": "domain2go_val_preds.tsv",
+      "weights": {
+        "F": 0.3885712516014019,
+        "P": 0.4692941650535394,
+        "C": 0.5088947334973902
+      },
+      "power": 1.0
+    },
+    {
+      "path": "esm2_val_preds.tsv",
+      "weights": {
+        "F": 0.15017610378014065,
+        "P": 0.10267656956069775,
+        "C": 0.07792910285224386
+      },
+      "power": 1.0
+    }
+  ]
+}

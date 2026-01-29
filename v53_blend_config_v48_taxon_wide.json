@@ -1,0 +1,30 @@
+{
+  "output": "submission_v53_blend_v48_taxon_wide.tsv",
+  "min_score": 0.05,
+  "min_score_by_aspect": {
+    "F": 0.06,
+    "P": 0.05,
+    "C": 0.05
+  },
+  "top_k": 300,
+  "normalize": true,
+  "hierarchy_clip": false,
+  "inputs": [
+    {
+      "path": "submission_v48_hybrid_esm2.tsv",
+      "weights": { "F": 0.78, "P": 0.60, "C": 0.60 },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v53_taxon_prior_wide.tsv",
+      "weights": { "F": 0.05, "P": 0.30, "C": 0.30 },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v49_diamond_transfer.tsv",
+      "weights": { "F": 0.17, "P": 0.10, "C": 0.10 },
+      "power": 1.0
+    }
+  ]
+}
+

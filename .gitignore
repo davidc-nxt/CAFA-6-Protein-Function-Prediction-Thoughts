@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+
+# Large data files (too big for GitHub)
+*.pkl
+*.npz
+*.dmnd
+*.tsv
+*.tsv.gz
+*.zip
+*.gz
+!*.py.gz
+
+# AlphaFold structures (300k+ files)
+structures/
+
+# Embedding files
+esm2_embeddings/
+prott5_embeddings/
+
+# FoldSeek temporary files
+tmp_foldseek/
+tmp_fs/
+foldseek_bin
+*_structure_db*
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Kaggle
+submission*.tsv
+submission*.zip
+
+# Cache files
+*_cache.pkl
+*_checkpoint.txt
+
+# Large model files
+*.model
+
+# Agent artifacts (keep for reference but don't push)
+# .agent/

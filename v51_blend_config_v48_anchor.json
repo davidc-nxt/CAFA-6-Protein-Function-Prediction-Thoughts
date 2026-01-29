@@ -1,0 +1,30 @@
+{
+  "output": "submission_v51_blend_v48_anchor.tsv",
+  "min_score": 0.05,
+  "min_score_by_aspect": {
+    "F": 0.05,
+    "P": 0.05,
+    "C": 0.05
+  },
+  "top_k": 300,
+  "normalize": true,
+  "hierarchy_clip": false,
+  "inputs": [
+    {
+      "path": "submission_v48_hybrid_esm2.tsv",
+      "weights": { "F": 0.70, "P": 0.70, "C": 0.70 },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v49_diamond_transfer.tsv",
+      "weights": { "F": 0.20, "P": 0.20, "C": 0.20 },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v49_domain2go.tsv",
+      "weights": { "F": 0.10, "P": 0.10, "C": 0.10 },
+      "power": 2.0
+    }
+  ]
+}
+

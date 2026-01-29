@@ -1,0 +1,42 @@
+{
+  "output": "submission_v49_blend_canon_small.tsv",
+  "min_score": 0.01,
+  "min_score_by_aspect": {
+    "F": 0.02,
+    "P": 0.03,
+    "C": 0.02
+  },
+  "top_k": 50,
+  "normalize": false,
+  "hierarchy_clip": false,
+  "inputs": [
+    {
+      "path": "submission_v49_diamond_transfer.tsv",
+      "weights": {
+        "F": 0.3427296768297278,
+        "P": 0.4970146753184246,
+        "C": 0.4816708633826589
+      },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v49_domain2go.tsv",
+      "weights": {
+        "F": 0.5216081241810572,
+        "P": 0.4610467131324104,
+        "C": 0.38913748363847916
+      },
+      "power": 1.0
+    },
+    {
+      "path": "submission_v49_esm2_supervised_full_medium.tsv",
+      "weights": {
+        "F": 0.13566219898921503,
+        "P": 0.04193861154916499,
+        "C": 0.12919165297886198
+      },
+      "power": 1.0
+    }
+  ]
+}
+
